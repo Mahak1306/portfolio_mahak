@@ -13,7 +13,7 @@
     <div id="header">
         <div class="container">
             <nav>
-                <img src="images/logo.png" alt="error" class="logo">
+                <img src="images/l1.jpg" alt="error" class="logo">
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
@@ -24,25 +24,118 @@
 
                 </ul>
             </nav>
+
             <div class="header-text">
                 <p>UI designer</p>
                 <h1>Hi, I'm <span>Mahak</span><br>Jain From India</h1>
 
             </div>
-            <div id="about">
-                <div class="container">
-                    <div class="row">
-                        <div class="about-col-1">
-                            <img src="images/user.png">
-                        </div>
-                        <div class="about-col-2">
-                            <h1>About me</h1>
-                        </div>
+        </div>
+    </div>
+    <!-- about section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/b2.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non distinctio totam suscipit. Officia eveniet sunt, delectus omnis in optio dolorem commodi magnam doloremque suscipit aut dolore earum nulla perferendis natus ducimus assumenda qui, unde amet architecto est. Beatae ratione sint necessitatibus animi nostrum obcaecati asperiores culpa. Laborum doloribus possimus eum?</p>
+                
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')"> Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designning Web/App Interface</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>App Development</span><br>Building Android/ios apps</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021 current</span><br>UI/UX design training</li>
+                            <li><span>2019-2021</span><br>MCA</li>
+                            <li><span>2017-2019</span><br>Internship</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2016</span><br>UI/UX design training</li>
+                            <li><span>2016</span><br>MCA</li>
+                            <li><span>2014</span><br>BCA(Hons.)</li>
+                            
+                        </ul>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
+    </div>
+    </div>
+
+    <!-- ---------services -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta unde fugit exercitationem a minima at pariatur iusto voluptas facere voluptate. Voluptate, nesciunt quas?</p>
+                    <a href="#">Learn More</a>
+                    
+                </div>
+
+                <div>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta unde fugit exercitationem a minima at pariatur iusto voluptas facere voluptate. Voluptate, nesciunt quas?</p>
+                    <a href="#">Learn More</a>
+                    
+                </div>
+                <div>
+                    <h2>App Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta unde fugit exercitationem a minima at pariatur iusto voluptas facere voluptate. Voluptate, nesciunt quas?</p>
+                    <a href="#">Learn More</a>
+                    
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script> 
+        var tablinks= document.getElementsByClassName("tab-links");  
+        var tablecontents= document.getElementsByClassName("tab-contents");   
+        function opentab(tabname){
+           for(tablink of tablinks) {
+            tablink.classList.remove("active-link");
+
+           }
+           for(tablecontent of tablecontents) {
+            tablecontent.classList.remove("active-tab");
+            
+           }
+           event.currentTarget.classList.add("active-link")
+           document.getElementById(tabname).classList.add("active-tab")
+        }
+        </script>
+
+
 </body>
 
 </html>
