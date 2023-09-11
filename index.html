@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>my portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bfbcd225dc.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -14,15 +15,15 @@
         <div class="container">
             <nav>
                 <img src="images/l1.jpg" alt="error" class="logo">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
-
-
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
 
             <div class="header-text">
@@ -41,8 +42,12 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About me</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non distinctio totam suscipit. Officia eveniet sunt, delectus omnis in optio dolorem commodi magnam doloremque suscipit aut dolore earum nulla perferendis natus ducimus assumenda qui, unde amet architecto est. Beatae ratione sint necessitatibus animi nostrum obcaecati asperiores culpa. Laborum doloribus possimus eum?</p>
-                
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non distinctio totam suscipit. Officia
+                        eveniet sunt, delectus omnis in optio dolorem commodi magnam doloremque suscipit aut dolore
+                        earum nulla perferendis natus ducimus assumenda qui, unde amet architecto est. Beatae ratione
+                        sint necessitatibus animi nostrum obcaecati asperiores culpa. Laborum doloribus possimus eum?
+                    </p>
+
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')"> Skills</p>
                         <p class="tab-links" onclick="opentab('experience')">Experience</p>
@@ -54,7 +59,7 @@
                             <li><span>UI/UX</span><br>Designning Web/App Interface</li>
                             <li><span>Web Development</span><br>Web App Development</li>
                             <li><span>App Development</span><br>Building Android/ios apps</li>
-                            
+
                         </ul>
                     </div>
                     <div class="tab-contents" id="experience">
@@ -62,7 +67,7 @@
                             <li><span>2021 current</span><br>UI/UX design training</li>
                             <li><span>2019-2021</span><br>MCA</li>
                             <li><span>2017-2019</span><br>Internship</li>
-                            
+
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
@@ -70,7 +75,7 @@
                             <li><span>2016</span><br>UI/UX design training</li>
                             <li><span>2016</span><br>MCA</li>
                             <li><span>2014</span><br>BCA(Hons.)</li>
-                            
+
                         </ul>
                     </div>
                 </div>
@@ -78,8 +83,7 @@
             </div>
         </div>
     </div>
-    </div>
-    </div>
+
 
     <!-- ---------services -->
     <div id="services">
@@ -87,27 +91,109 @@
             <h1 class="sub-title">My Services</h1>
             <div class="services-list">
                 <div>
+                    <i class="fa-solid fa-code"></i>
                     <h2>Web Design</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta unde fugit exercitationem a minima at pariatur iusto voluptas facere voluptate. Voluptate, nesciunt quas?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta unde fugit exercitationem a minima
+                        at pariatur iusto voluptas facere voluptate. Voluptate, nesciunt quas?</p>
                     <a href="#">Learn More</a>
-                    
+
                 </div>
 
                 <div>
+                    <i class="fa-sharp fa-solid fa-crop-simple"></i>
                     <h2>UI/UX Design</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta unde fugit exercitationem a minima at pariatur iusto voluptas facere voluptate. Voluptate, nesciunt quas?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta unde fugit exercitationem a minima
+                        at pariatur iusto voluptas facere voluptate. Voluptate, nesciunt quas?</p>
                     <a href="#">Learn More</a>
-                    
+
                 </div>
                 <div>
+                    <i class="fa-brands fa-app-store"></i>
                     <h2>App Development</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta unde fugit exercitationem a minima at pariatur iusto voluptas facere voluptate. Voluptate, nesciunt quas?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta unde fugit exercitationem a minima
+                        at pariatur iusto voluptas facere voluptate. Voluptate, nesciunt quas?</p>
                     <a href="#">Learn More</a>
-                    
+
                 </div>
 
 
             </div>
+        </div>
+    </div>
+    <!-- portfolio -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-titile">My Work</h1>
+            <div class="work-list">
+
+                <div class="work">
+                    <img src="images//work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae sed velit, vitae
+                            perferendis illo ipsa iure, placeat quasi et blanditiis at minima? Expedita?</p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images//work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae sed velit, vitae
+                            perferendis illo ipsa iure, placeat quasi et blanditiis at minima? Expedita?</p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images//work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Onine Shopping App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae sed velit, vitae
+                            perferendis illo ipsa iure, placeat quasi et blanditiis at minima? Expedita?</p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    <!-- =============contact============ -->
+    <div class="contact">
+        <div class="coontainer">
+            <div class="row">
+
+                <div class="contact-left">
+                    <h1 class="'subtitle">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>mahakjain.jain13061@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>8840965694</p>
+                    <div class="social-icons">
+                        <a href="http://facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="http://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="http://instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="http://linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/resume mahak-1 (1).pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="Submit" class="btn btn2">Submit</button>
+
+
+                    </form>
+                    <span id="msg"></span>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="copyright">
+            <p>Copyright @Mahak <i class="fa-sharp fa-solid fa-heart"></i> 2023</p>
         </div>
     </div>
 
@@ -117,23 +203,54 @@
 
 
 
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tablecontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
 
-    <script> 
-        var tablinks= document.getElementsByClassName("tab-links");  
-        var tablecontents= document.getElementsByClassName("tab-contents");   
-        function opentab(tabname){
-           for(tablink of tablinks) {
-            tablink.classList.remove("active-link");
+            }
+            for (tablecontent of tablecontents) {
+                tablecontent.classList.remove("active-tab");
 
-           }
-           for(tablecontent of tablecontents) {
-            tablecontent.classList.remove("active-tab");
-            
-           }
-           event.currentTarget.classList.add("active-link")
-           document.getElementById(tabname).classList.add("active-tab")
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
         }
-        </script>
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyEIpHTCyjgJzmhwwM0-mBenBlyOTvW-NThNcA47SC4fsR97bpz6tq7uuVHXSB8H38k/exec'      
+        const form = document.forms['submit-to-google-sheet']
+
+        const msg= document.getElementById("msg")
+        
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML="Msg sent successfully! 😊 "
+                    setTimeout(function(){
+                        msg.innerHTML=""
+                    },5000)
+                    form.reset()
+                })
+                
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
 
 
 </body>
